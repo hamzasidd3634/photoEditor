@@ -1,6 +1,8 @@
-List<String> getSmileys() {
-  List emojis = <String>[];
-  String emoji;
+import 'package:image_editor_pro/image_editor_pro.dart';
+
+List<String>? getSmileys() {
+  List? emojis = <String>[];
+  String? emoji;
 
   emoji = '😀';
   emojis.add(emoji);
@@ -1441,5 +1443,5 @@ List<String> getSmileys() {
   emoji = '🤾🏾‍♀️️️️‍';
   emojis.add(emoji);
 
-  return emojis;
+  return emojis as List<String>;
 }

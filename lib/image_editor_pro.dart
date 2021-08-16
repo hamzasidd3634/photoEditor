@@ -38,10 +38,10 @@ SignatureController _controller =
     SignatureController(penStrokeWidth: 5, penColor: Colors.green);
 
 class ImageEditorPro extends StatefulWidget {
-  final Color appBarColor;
-  final Color bottomBarColor;
-  final Directory pathSave;
-  final double pixelRatio;
+  final Color? appBarColor;
+  final Color? bottomBarColor;
+  final Directory? pathSave;
+  final double? pixelRatio;
   ImageEditorPro(
       {this.appBarColor, this.bottomBarColor, this.pathSave, this.pixelRatio});
 
@@ -75,9 +75,9 @@ class _ImageEditorProState extends State<ImageEditorPro> {
 
   final GlobalKey container = GlobalKey();
   final GlobalKey globalKey = GlobalKey();
-  File _image;
+  File? _image;
   ScreenshotController screenshotController = ScreenshotController();
-  Timer timeprediction;
+  Timer? timeprediction;
   void timers() {
     Timer.periodic(Duration(milliseconds: 10), (tim) {
       setState(() {});
@@ -87,7 +87,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
 
   @override
   void dispose() {
-    timeprediction.cancel();
+    timeprediction!.cancel();
     _controller.clear();
     widgetJson.clear();
     heightcontroler.clear();
@@ -138,7 +138,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                           child: ClipRect(
                             // <-- clips to the 200x200 [Container] below
 
-                            child: _image.path
+                            child: _image!.path
                                 .decorationIFToFitHeight()
                                 .xContainer(
                                     padding: EdgeInsets.zero,
@@ -172,14 +172,14 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                   Signat().xGesture(
                     onPanUpdate: (DragUpdateDetails details) {
                       setState(() {
-                        RenderBox object = context.findRenderObject();
+                        var object = context.findRenderObject() as RenderBox;
                         var _localPosition =
                             object.globalToLocal(details.globalPosition);
                         _points = List.from(_points)..add(_localPosition);
                       });
                     },
                     onPanEnd: (DragEndDetails details) {
-                      _points.add(null);
+                      // _points.add(null);
                     },
                   ).xContainer(padding: EdgeInsets.all(0.0)),
                   xStack.list(
@@ -189,7 +189,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                               left: offsets[f.key].dx,
                               top: offsets[f.key].dy,
                               ontap: () {
-                                scaf.currentState.showBottomSheet((context) {
+                                scaf.currentState!.showBottomSheet((context) {
                                   return Sliders(
                                     index: f.key,
                                     mapValue: f.value,
@@ -316,7 +316,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                             DateTime.now().toString() +
                             '.jpg')
                         .create();
-                    file.writeAsBytesSync(binaryIntList);
+                    file.writeAsBytesSync(binaryIntList!);
                     Navigator.pop(context, file);
                   }).catchError((onError) {
                     print(onError);
@@ -334,7 +334,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
               ).list(
                 <Widget>[
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: FontAwesomeIcons.brush,
                     ontap: () {
                       // raise the [showDialog] widget
@@ -364,7 +364,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Brush',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: Icons.text_fields,
                     ontap: () async {
                       var value = await Navigator.push(
@@ -386,7 +386,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Text',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: Icons.flip,
                     ontap: () {
                       setState(() {
@@ -396,7 +396,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Flip',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: Icons.rotate_left,
                     ontap: () {
                       setState(() {
@@ -406,7 +406,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Rotate left',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: Icons.rotate_right,
                     ontap: () {
                       setState(() {
@@ -416,7 +416,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Rotate right',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: Icons.blur_on,
                     ontap: () {
                       showModalBottomSheet(
@@ -532,7 +532,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Blur',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: FontAwesomeIcons.eraser,
                     ontap: () {
                       _controller.clear();
@@ -545,7 +545,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Eraser',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: Icons.photo,
                     ontap: () {
                       showModalBottomSheet(
@@ -649,7 +649,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     title: 'Filter',
                   ),
                   BottomBarContainer(
-                    colors: widget.bottomBarColor,
+                    colors: widget.bottomBarColor!,
                     icons: FontAwesomeIcons.smile,
                     ontap: () {
                       var getemojis = showModalBottomSheet(
@@ -674,7 +674,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
               ).xContainer(
                 padding: EdgeInsets.all(0.0),
                 blurRadius: 10.9,
-                shadowColor: widget.bottomBarColor,
+                shadowColor: widget.bottomBarColor!,
                 height: 70,
               ));
   }
@@ -707,7 +707,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                     var image =
                         await picker.getImage(source: ImageSource.gallery);
                     var decodedImage = await decodeImageFromList(
-                        File(image.path).readAsBytesSync());
+                        File(image!.path).readAsBytesSync());
 
                     setState(() {
                       height = decodedImage.height;
@@ -728,7 +728,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                 ).xContainer(onTap: () async {
                   var image = await picker.getImage(source: ImageSource.camera);
                   var decodedImage = await decodeImageFromList(
-                      File(image.path).readAsBytesSync());
+                      File(image!.path).readAsBytesSync());
 
                   setState(() {
                     height = decodedImage.height;

@@ -22,33 +22,33 @@ const _kBarPadding = 4;
 /// A bar color picker
 class BarColorPicker extends StatefulWidget {
   /// mode enum of pick a normal color or pick a grey color
-  final PickMode pickMode;
+  final PickMode? pickMode;
 
   /// width of bar, if this widget is horizontal, than
   /// bar width is this value, if this widget is vertical
   /// bar height is this value
-  final double width;
+  final double? width;
 
   /// A listener receives color pick events.
-  final ColorListener colorListener;
+  final ColorListener? colorListener;
 
   /// corner radius of the picker bar, for each corners
-  final double cornerRadius;
+  final double? cornerRadius;
 
   /// specifies the bar orientation
-  final bool horizontal;
+  final bool? horizontal;
 
   /// thumb fill color
-  final Color thumbColor;
+  final Color? thumbColor;
 
   /// radius of thumb
-  final double thumbRadius;
+  final double? thumbRadius;
 
   /// initial color of this color picker.
-  final Color initialColor;
+  final Color? initialColor;
 
   BarColorPicker({
-    Key key,
+    Key? key,
     this.pickMode = PickMode.Color,
     this.horizontal = true,
     this.width = 200,
@@ -71,17 +71,17 @@ class BarColorPicker extends StatefulWidget {
 
 class _BarColorPickerState extends State<BarColorPicker> {
   double percent = 0.0;
-  List<Color> colors;
-  double barWidth, barHeight;
+  List<Color>? colors;
+  double? barWidth, barHeight;
 
   @override
   void initState() {
     super.initState();
-    if (widget.horizontal) {
+    if (widget.horizontal!) {
       barWidth = widget.width;
-      barHeight = widget.thumbRadius * 2 - _kBarPadding;
+      barHeight = widget.thumbRadius! * 2 - _kBarPadding;
     } else {
-      barWidth = widget.thumbRadius * 2 - _kBarPadding;
+      barWidth = widget.thumbRadius! * 2 - _kBarPadding;
       barHeight = widget.width;
     }
     switch (widget.pickMode) {
@@ -100,7 +100,7 @@ class _BarColorPickerState extends State<BarColorPicker> {
         colors = const [Color(0xff000000), Color(0xffffffff)];
         break;
     }
-    percent = HSVColor.fromColor(widget.initialColor).hue / 360;
+    percent = HSVColor.fromColor(widget.initialColor!).hue / 360;
   }
 
   @override
@@ -108,35 +108,35 @@ class _BarColorPickerState extends State<BarColorPicker> {
     final thumbRadius = widget.thumbRadius;
     final horizontal = widget.horizontal;
 
-    double thumbLeft, thumbTop;
-    if (horizontal) {
-      thumbLeft = barWidth * percent;
+    double? thumbLeft, thumbTop;
+    if (horizontal!) {
+      thumbLeft = barWidth! * percent;
     } else {
-      thumbTop = barHeight * percent;
+      thumbTop = barHeight! * percent;
     }
     // build thumb
     var thumb = XContainer(
       padding: EdgeInsets.zero,
-      width: thumbRadius * 2,
+      width: thumbRadius! * 2,
       height: thumbRadius * 2,
       shadowColor: _kThumbShadowColor,
       spreadRadius: 2,
       blurRadius: 3,
-      color: widget.thumbColor,
+      color: widget.thumbColor!,
       rounded: thumbRadius,
     ).xPositioned(
-      left: thumbLeft,
-      top: thumbTop,
+      left: thumbLeft!,
+      top: thumbTop!,
     );
 
     // build frame
     double frameWidth, frameHeight;
     if (horizontal) {
-      frameWidth = barWidth + thumbRadius * 2;
+      frameWidth = barWidth! + thumbRadius * 2;
       frameHeight = thumbRadius * 2;
     } else {
       frameWidth = thumbRadius * 2;
-      frameHeight = barHeight + thumbRadius * 2;
+      frameHeight = barHeight! + thumbRadius * 2;
     }
     Widget frame = SizedBox(width: frameWidth, height: frameHeight);
 
@@ -144,22 +144,22 @@ class _BarColorPickerState extends State<BarColorPicker> {
     Gradient gradient;
     double left, top;
     if (horizontal) {
-      gradient = LinearGradient(colors: colors);
+      gradient = LinearGradient(colors: colors!);
       left = thumbRadius;
-      top = (thumbRadius * 2 - barHeight) / 2;
+      top = (thumbRadius * 2 - barHeight!) / 2;
     } else {
       gradient = LinearGradient(
-          colors: colors,
+          colors: colors!,
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter);
-      left = (thumbRadius * 2 - barWidth) / 2;
+      left = (thumbRadius * 2 - barWidth!) / 2;
       top = thumbRadius;
     }
     var content = XContainerGradient(
       padding: EdgeInsets.zero,
-      width: barWidth,
-      height: barHeight,
-      rounded: widget.cornerRadius,
+      width: barWidth!,
+      height: barHeight!,
+      rounded: widget.cornerRadius!,
       gradient: gradient,
       child: ''.text(),
     ).xPositioned(
@@ -176,13 +176,13 @@ class _BarColorPickerState extends State<BarColorPicker> {
 
   /// calculate colors picked from palette and update our states.
   void handleTouch(Offset globalPosition, BuildContext context) {
-    RenderBox box = context.findRenderObject();
+    var box = context.findRenderObject() as RenderBox;
     var localPosition = box.globalToLocal(globalPosition);
     double percent;
-    if (widget.horizontal) {
-      percent = (localPosition.dx - widget.thumbRadius) / barWidth;
+    if (widget.horizontal!) {
+      percent = (localPosition.dx - widget.thumbRadius!) / barWidth!;
     } else {
-      percent = (localPosition.dy - widget.thumbRadius) / barHeight;
+      percent = (localPosition.dy - widget.thumbRadius!) / barHeight!;
     }
     percent = min(max(0.0, percent), 1.0);
     setState(() {
@@ -191,11 +191,11 @@ class _BarColorPickerState extends State<BarColorPicker> {
     switch (widget.pickMode) {
       case PickMode.Color:
         var color = HSVColor.fromAHSV(1.0, percent * 360, 1.0, 1.0).toColor();
-        widget.colorListener(color.value);
+        widget.colorListener!(color.value);
         break;
       case PickMode.Grey:
         final channel = (0xff * percent).toInt();
-        widget.colorListener(
+        widget.colorListener!(
             Color.fromARGB(0xff, channel, channel, channel).value);
         break;
     }
@@ -206,22 +206,22 @@ class _BarColorPickerState extends State<BarColorPicker> {
 class CircleColorPicker extends StatefulWidget {
   // radius of the color palette, note that radius * 2 is not the final
   // width of this widget, instead is (radius + thumbRadius) * 2.
-  final double radius;
+  final double? radius;
 
   /// thumb fill color.
-  final Color thumbColor;
+  final Color? thumbColor;
 
   /// radius of thumb.
-  final double thumbRadius;
+  final double? thumbRadius;
 
   /// A listener receives color pick events.
-  final ColorListener colorListener;
+  final ColorListener? colorListener;
 
   /// initial color of this color picker.
-  final Color initialColor;
+  final Color? initialColor;
 
   CircleColorPicker(
-      {Key key,
+      {Key? key,
       this.radius = 120,
       this.initialColor = const Color(0xffff0000),
       this.thumbColor = Colors.black,
@@ -249,14 +249,15 @@ class _CircleColorPickerState extends State<CircleColorPicker> {
     Color(0xffff0000)
   ];
 
-  double thumbDistanceToCenter;
-  double thumbRadians;
+  double? thumbDistanceToCenter;
+
+  double? thumbRadians;
 
   @override
   void initState() {
     super.initState();
     thumbDistanceToCenter = widget.radius;
-    final hue = HSVColor.fromColor(widget.initialColor).hue;
+    final hue = HSVColor.fromColor(widget.initialColor!).hue;
     thumbRadians = degreesToRadians(270 - hue);
   }
 
@@ -266,19 +267,19 @@ class _CircleColorPickerState extends State<CircleColorPicker> {
     final thumbRadius = widget.thumbRadius;
 
     // compute thumb center coordinate
-    final thumbCenterX = radius + thumbDistanceToCenter * sin(thumbRadians);
-    final thumbCenterY = radius + thumbDistanceToCenter * cos(thumbRadians);
+    final thumbCenterX = radius! + thumbDistanceToCenter! * sin(thumbRadians!);
+    final thumbCenterY = radius + thumbDistanceToCenter! * cos(thumbRadians!);
 
     // build thumb widget
     Widget thumb = Positioned(
         child: XContainer(
       padding: EdgeInsets.zero,
-      width: thumbRadius * 2,
+      width: thumbRadius! * 2,
       height: thumbRadius * 2,
       shadowColor: _kThumbShadowColor,
       spreadRadius: 2,
       blurRadius: 3,
-      color: widget.thumbColor,
+      color: widget.thumbColor!,
       rounded: thumbRadius,
     ).xPositioned(
       left: thumbCenterX,
@@ -312,7 +313,7 @@ class _CircleColorPickerState extends State<CircleColorPicker> {
 
   /// calculate colors picked from palette and update our states.
   void handleTouch(Offset globalPosition, BuildContext context) {
-    RenderBox box = context.findRenderObject();
+    var box = context.findRenderObject() as RenderBox;
     var localPosition = box.globalToLocal(globalPosition);
     final centerX = box.size.width / 2;
     final centerY = box.size.height / 2;
@@ -322,9 +323,9 @@ class _CircleColorPickerState extends State<CircleColorPicker> {
     var theta = atan2(deltaX, deltaY);
     var degree = 270 - radiansToDegrees(theta);
     if (degree < 0) degree = 360 + degree;
-    widget.colorListener(HSVColor.fromAHSV(1, degree, 1, 1).toColor().value);
+    widget.colorListener!(HSVColor.fromAHSV(1, degree, 1, 1).toColor().value);
     setState(() {
-      thumbDistanceToCenter = min(distanceToCenter, widget.radius);
+      thumbDistanceToCenter = min(distanceToCenter, widget.radius!);
       thumbRadians = theta;
     });
   }

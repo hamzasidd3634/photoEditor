@@ -2,50 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ea1f31-da9d-4cdb-b4dd-df299f338ddb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/zeeshux7860/update/image_editor_pro/ImageEditorProPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/zeeshux7860/update/image_editor_pro/ImageEditorProPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/zeeshux7860/update/image_editor_pro/ImageEditorProPlugin.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/java/zeeshux7860/update/image_editor_pro_example/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/java/zeeshux7860/update/image_editor_pro_example/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/zeeshux7860/update/image_editor_pro_example/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable-v21/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values-night/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values-night/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/profile/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_editor_pro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/image_editor_pro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_configuration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_configuration.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_configurator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_configurator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_executor.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_executor.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_limiter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/animation_limiter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/fade_in_animation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/fade_in_animation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/flip_animation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/flip_animation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/scale_animation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/scale_animation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/slide_animation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Animations/slide_animation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/AppBar/AppBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/AppBar/AppBar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/animate_if_visible.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/animate_if_visible.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/animator/stack.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/animator/stack.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/grid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/grid.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/icon_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/icon_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/sliver_grid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/sliver_grid.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/sliver_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Auto_animated/sliver_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Button/material_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Button/material_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Button/two_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Button/two_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/Card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/Card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/CardTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/CardTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/CardTiles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/CardTiles.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/GradientCard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/GradientCard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/StaticCard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Card/StaticCard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Container/Container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Container/Container.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Container/Container_Extesnstion.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Container/Container_Extesnstion.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Container/GradientContainer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Container/GradientContainer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Drawer/DrawerMXFullWidth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Drawer/DrawerMXFullWidth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Drawer/rounded_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Drawer/rounded_drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/BlogTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/BlogTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Column.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Column.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Dropdown.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Dropdown.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Flexable_Responsive.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Flexable_Responsive.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/GridAnimated.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/GridAnimated.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Icon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Icon.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Image.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Image.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/InkWell.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/InkWell.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Row.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Row.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Scaffold.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Scaffold.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/SilverList.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/SilverList.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/SnackBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/SnackBar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Stack.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Stack.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/StreamBuilder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/StreamBuilder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Strings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Strings.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Tabbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Tabbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/Widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/function.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Extension/function.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Heading/GradientTitle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Heading/GradientTitle.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Heading/Title.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Heading/Title.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Heading/heading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Heading/heading.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/ListTile/MxListTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/ListTile/MxListTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/BanTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/BanTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/BlogTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/BlogTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/BuilderStories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/BuilderStories.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CardBarButton.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CardBarButton.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CardListTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CardListTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CardListTileGradient.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CardListTileGradient.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CircleView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CircleView.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Column.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Column.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CrownTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/CrownTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/DrawerMXuserProfile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/DrawerMXuserProfile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ExpansionTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ExpansionTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ImageBlue.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ImageBlue.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/List.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/List.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ListView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ListView.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ProgressLoading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/ProgressLoading.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Row.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Row.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/SizeTransition.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/SizeTransition.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Stack.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Stack.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/StoriesBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/StoriesBar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/TabBar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/TabBar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/TransactioTile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/TransactioTile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/Widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/stful_stless.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/stful_stless.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/title.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/title.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/render_visibility_detector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/render_visibility_detector.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/visibility_detector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/visibility_detector.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/visibility_detector_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/visibility_detector_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/visibility_detector_layer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Modules/visibility_detector/visibility_detector_layer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/extensuion_database.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/extensuion_database.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/function.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/function.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/node_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/node_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/node_routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/node_routes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/setup.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Node/setup.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Responsive/Extension.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Responsive/Extension.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Responsive/Responsive_grid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Responsive/Responsive_grid.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Swipper/Swipe_To.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Swipper/Swipe_To.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Text/h_tag.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Text/h_tag.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Text/text_material.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Text/text_material.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/TextFiled/textFiled_material.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/TextFiled/textFiled_material.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Widget/Drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Widget/Drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Widget/DropDown.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/Widget/DropDown.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/refresh/circular_progress.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/refresh/circular_progress.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/refresh/clipper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/refresh/clipper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/lib/src/refresh/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/lib/src/refresh/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/FireXcode/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/FireXcode/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/README_zh-CN.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/README_zh-CN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/example/lib/parallel_animation_logo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/example/lib/parallel_animation_logo.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/lib/animated_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/lib/animated_config.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/lib/animated_interpolation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/lib/animated_interpolation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/lib/smart_tabbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/lib/smart_tabbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/lib/sweet_indicator_painter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/lib/sweet_indicator_painter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animated_interpolation/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animated_interpolation/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_2_API_30]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5X_API_30]" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/plugins/FireXcode" />
   </component>
   <component name="ProjectId" id="1sd2A3mVggRb0AEDSTO2Y0FKQmt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -63,5 +145,11 @@
       <updated>1621187998193</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="660" y="260" width="585" height="592" key="find.popup" timestamp="1629108962214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="660" y="260" width="585" height="592" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1629108962214" />
   </component>
 </project>

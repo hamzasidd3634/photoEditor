@@ -23,7 +23,7 @@ class _EmojiesState extends State<Emojies> {
               scrollDirection: Axis.vertical,
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                   mainAxisSpacing: 0.0, maxCrossAxisExtent: 60.0),
-              children: emojis.map((String emoji) {
+              children: emojis!.map((String emoji) {
                 return GridTile(
                     child: emoji
                         .xText(fontsize: 35)
@@ -46,11 +46,11 @@ class _EmojiesState extends State<Emojies> {
       height: 400,
       color: Colors.white,
       blurRadius: 10.9,
-      shadowColor: Colors.grey[400],
+      shadowColor: Colors.grey[400]!,
     );
   }
 
-  List<String> emojis = [];
+  List<String>? emojis = [];
   @override
   void initState() {
     super.initState();

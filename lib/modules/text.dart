@@ -104,7 +104,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                           color: Colors.white,
                           onTap: () {
                             setState(() {
-                              align = null;
+                             // align = null;
                             });
                           })
                       .xap(value: 5)
@@ -119,7 +119,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                           color: Colors.white,
                           onTap: () {
                             setState(() {
-                              align = null;
+                             // align = null;
                             });
                           })
                       .xap(value: 5)
@@ -135,7 +135,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                           color: Colors.white,
                           onTap: () {
                             setState(() {
-                              align = null;
+                            //  align = null;
                             });
                           })
                       .xap(value: 5)
@@ -172,5 +172,5 @@ class _TextEditorImageState extends State<TextEditorImage> {
         );
   }
 
-  TextAlign align;
+  TextAlign? align;
 }

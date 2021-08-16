@@ -41,6 +41,12 @@
       <excludeFolder url="file://$MODULE_DIR$/example/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/animated_interpolation/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/animated_interpolation/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/animated_interpolation/build" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/animated_interpolation/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/animated_interpolation/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/plugins/animated_interpolation/example/build" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
